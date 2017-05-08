@@ -1,0 +1,46 @@
+{
+  "name": "arma_tools",
+  "version": "1.0.0",
+  "description": "webtools für arma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "dev": "webpack-dev-server",
+    "bundle": "webpack -p"
+  },
+  "author": "Benjamin Framke",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.1",
+    "bootstrap": "^3.3.7",
+    "caniuse-api": "^2.0.0",
+    "express": "^4.15.2",
+    "history": "^4.6.1",
+    "jsonwebtoken": "^7.4.0",
+    "material-ui": "^0.18.0",
+    "mongoose": "^4.9.7",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-tap-event-plugin": "^2.0.1",
+    "universal-router": "^3.1.0",
+    "validator": "^7.0.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "jshint": "^2.9.4",
+    "jshint-loader": "^0.8.4",
+    "node-libs-browser": "^2.0.0",
+    "nodemon": "^1.11.0",
+    "webpack": "^2.5.0"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "dbUri": "mongodb://localhost/arma_tools",
+  "jwtSecret": "rq]6u,.sw8-(@MA8=&B/P42)!5[zwh.M"
+}
