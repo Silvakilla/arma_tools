@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     entry: [path.join(__dirname, '/client/app.jsx')],
@@ -25,8 +26,24 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.js','.es6','.jsx']
+        extensions: ['.js','.es6','.jsx','.json']
     },
+
+    plugins: [
+        new webpack.DefinePlugin({
+            'process.env': {
+                NODE_ENV: '"production"'
+            }
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false,
+                screw_ie8: true,
+                drop_console: true,
+                drop_debugger: true
+            }
+        })
+    ],
 
     watch: true
 };

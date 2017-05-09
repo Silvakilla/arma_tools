@@ -34,6 +34,7 @@ module.exports = {
       host : '134.255.252.89',
       ref  : 'origin/master',
       repo : 'git@github.com:Silvakilla/arma_tools.git',
+      ssh_options: "StrictHostKeyChecking=no",
       path : '/var/www/production',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     },
